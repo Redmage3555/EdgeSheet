@@ -10,14 +10,7 @@ import { setGlobal } from 'reactn'
 export const onClientEntry = () => {
     setGlobal({
         name: "Default Name",
-        species: {
-            name: "Human",
-            brawn: 1,
-            agility: 1,
-            intellect: 1,
-            wisdom: 1,
-            force: 0
-        },
+        species: "Human",
         carrer: {
             name: "smuggler",
             speciality: "Gunslinger"

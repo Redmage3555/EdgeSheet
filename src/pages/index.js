@@ -1,36 +1,13 @@
-import React, { useGlobal } from "reactn"
+import React from "reactn"
 // import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-//import Image from "../components/image"
 import SEO from "../components/seo"
+import CharacterDescriptionPanel from "../components/nameplate_components/nameplate"
+//import Image from "../components/image"
 
 const CenteredHeaderMeta = { style: { textAlign: `center`, fontWeight: `500`, textDecoration: `underline`, paddingRight: `200px` } }
 const rowItemPadding = { padding: `0px 50px 0px 50px` }
-
-const CharacterDescriptionPanel = () => {
-  const [name, setName] = useGlobal('name')
-
-  return (<div className="row" description="Character Information">
-    <div className="three columns">
-      <strong>Character Name</strong>
-      <br />
-      <em>{name}</em>
-    </div>
-    <div className="three columns">
-      <strong>Species</strong>
-      <p>Human</p>
-    </div>
-    <div className="three columns">
-      <strong>Carrer</strong>
-      <p>Smuggler</p>
-    </div>
-    <div className="three columns">
-      <strong>Specialization Trees</strong>
-      <p>Gunslinger</p>
-    </div>
-  </div>)
-}
 
 const IndexPage = () => (
   <Layout>
